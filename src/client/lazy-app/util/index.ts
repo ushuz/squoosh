@@ -101,6 +101,7 @@ const magicNumberMapInput = [
   [/^RIFF....WEBPVP8[LX ]/s, 'image/webp'],
   [/^\xF4\xFF\x6F/, 'image/webp2'],
   [/^\x00\x00\x00 ftypavif\x00\x00\x00\x00/, 'image/avif'],
+  [/^....ftyp(heic|heix|heim|heis|hevc|hevx|mif1|msf1)/s, 'image/heic'],
   [/^\xff\x0a/, 'image/jxl'],
   [/^\x00\x00\x00\x0cJXL \x0d\x0a\x87\x0a/, 'image/jxl'],
   [/^qoif/, 'image/qoi'],

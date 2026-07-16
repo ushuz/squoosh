@@ -102,6 +102,9 @@ async function decodeImage(
       if (mimeType === 'image/avif') {
         return await workerBridge.avifDecode(signal, blob);
       }
+      if (mimeType === 'image/heic') {
+        return await workerBridge.heicDecode(signal, blob);
+      }
       if (mimeType === 'image/webp') {
         return await workerBridge.webpDecode(signal, blob);
       }
