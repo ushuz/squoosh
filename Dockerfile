@@ -12,7 +12,7 @@ COPY . .
 RUN npm run build
 
 # Serve the static site with nginx
-FROM nginx:1.27-alpine AS serve
+FROM nginx:alpine AS serve
 
 # The app relies on SharedArrayBuffer (multithreaded WASM codecs), which
 # requires cross-origin isolation. These headers mirror serve.json.
